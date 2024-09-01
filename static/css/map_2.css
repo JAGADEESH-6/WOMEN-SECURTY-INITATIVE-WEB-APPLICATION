@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,500;1,600;1,900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    
+    display: flex;
+  
+}
+
+
+.sidebar {
+    background-color: aqua;
+    flex: 10%;
+    background: #FFF;
+    box-shadow: 0px 4px 64px 0px rgba(0, 0, 0, 0.10);
+}
+
+.sidebar img {
+    width: 100%;
+    height: auto;
+
+}
+
+.munu-icon{
+    display: none;
+}
+
+.sildebar-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.menu-item {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+
+.main-section {
+    flex: 90%;
+    display: flex;
+
+}
+
+
+.container {
+   
+    flex: 50%;
+   
+
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+
+.container-title {
+    font-size: 2rem;
+    font-weight: 500;
+    width: 100%;
+
+    margin: 2rem 0 2rem 5rem;
+
+}
+
+.map-container{
+ 
+    display: grid;
+    place-items: center;
+    width: 80%;
+    margin: 1rem auto;
+}
+
+
+.form-container {
+   
+    flex: 40%;
+    height: 100vh;
+
+    border-radius: 0px 0px 0px 100px;
+    background: linear-gradient(180deg, #61439A 0%, #E6BFFF 100%);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+    align-items: center;
+
+   
+}
+
+
+.form-card{
+    /* position: relative; */
+    padding: 2rem;
+ 
+}
+
+.form {
+    /* position: absolute;
+    top: 50%;
+    left: 50%; */
+
+    /* transform: translate(-50%, -50%); */
+    border-radius: 10px;
+    padding: 2rem;
+    border: 1px solid #FFF;
+    background: linear-gradient(156deg, #FFF 0%, rgba(255, 255, 255, 0.50) 99.49%);
+    box-shadow: 0px 4px 64px 0px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(50px);
+}
+
+.form-text {
+
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.form-title {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.form-field {
+    display: flex;
+    width: 423px;
+    height: 92px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 9px;
+    flex-shrink: 0;
+    margin: .5rem 0;
+}
+
+
+
+.form-field input {
+    width: 100%;
+    border-radius: 6px;
+    padding: 1rem;
+    border: 0.6px solid #282828;
+    background: #FFF;
+}
+
+.radio-field {
+    display: flex;
+    width: 200px;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+
+.radio-btn {
+    display: inline-flex;
+    padding: 10px 10px 10px 35px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    border-radius: 99px;
+    background: var(--system-colors-scl-green, #34C759);
+    position: relative;
+}
+
+.radio-btn div {
+    position: absolute;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: white;
+    top: 50%;
+    right: 0;
+    transform: translate(-5%, -50%);
+
+
+}
+
+.submit-btn {
+    color: white;
+    border-radius: 6px;
+    border: none;
+    background: #61439A;
+    width: 100%;
+    padding: .5rem 0;
+    margin: 1rem 0;
+
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+
+
+    body {
+        width: 100vw;
+        height: auto;
+        
+        display: flex;
+        padding: 0 0 0 1rem;
+    }
+
+
+    .main-section {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .form-container {
+   
+        border-radius: 0;
+      
+    }
+    
+    .form{
+        width: 80%;
+        margin: 2rem;
+    }
+
+    .form-field {
+        width: 100%;
+
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    body{
+        display: block;
+    }
+    .munu-icon{
+        display: block;
+        margin: 1rem;
+    }
+    .sidebar {
+        display: flex ;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+     .sidebar img {
+        width: 40px;
+        height: 32px;
+     }
+    .sildebar-menu {
+        display: none;
+    }
+    .main-section {
+       
+        flex-direction: column;
+        padding: 0;
+    }
+
+   .container-title{
+    margin: 2rem 0 1rem 1rem;
+   }
+   .map-container{
+    padding: 0;
+   }
+   .map-container iframe{
+    width: 100%;
+   }
+    .post{
+        width: 100%;
+    }
+    .form-container {
+   
+        border-radius: 0;
+      
+    }
+
+    .form-card{
+    
+        padding: 1rem 0 ;
+
+    }
+ 
+    .form{
+      
+      margin: 0;   
+    width: 100%;
+      
+
+     }
+
+    .form-field {
+        width: max-content;
+
+    }
+
+
+}

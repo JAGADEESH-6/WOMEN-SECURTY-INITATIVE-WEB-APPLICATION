@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='css/login.css') }}"
+    />
+  </head>
+
+  <body>
+    <div class="img-login"></div>
+    <div class="container">
+      <!-- {% with messages = get_flashed_messages() %} {% if messages %}
+      <ul>
+        {% for message in messages %} {% if 'success' in message %}
+        <li class="success-message">{{ message }}</li>
+        {% elif 'error' in message %}
+        <li class="error-message">{{ message }}</li>
+        {% else %}
+        <li>{{ message }}</li>
+        {% endif %} {% endfor %}
+      </ul>
+      {% endif %} {% endwith %} -->
+
+      <form class="form" method="POST" action="./">
+        <div>
+          <h2 class="form-text">Welcome !</h2>
+          <div>
+            <h1 class="form-title">User login</h1>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="username" class="form-label">Username</label>
+          <input
+            required
+            type="text"
+            class="form-control"
+            name="username"
+            id="username"
+            placeholder="Enter your user name "
+          />
+        </div>
+        <div class="form-field">
+          <label for="password1" class="form-label">Password</label>
+          <input
+            required
+            type="password"
+            class="form-control"
+            name="password1"
+            id="password1"
+            placeholder="Enter your Password"
+          />
+        </div>
+
+        <button type="submit" class="login-btn">Login</button>
+        <p style="width: 100%; text-align: center">
+          Don’y have an Account ? <a href="./signup">Register</a>
+        </p>
+      </form>
+    </div>
+  </body>
+</html>

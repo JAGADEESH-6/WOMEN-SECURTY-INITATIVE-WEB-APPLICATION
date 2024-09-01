@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Map2</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/map_2.css') }}">
+  </head>
+  <body>
+    <div class="sidebar">
+      <img src="../static/images/logo.png" />
+      <div class="sildebar-menu">
+        <a href="./home" class=" ">
+          <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="none">
+              <path
+                  d="M8.49996 26.9167H12.75V18.4167H21.25V26.9167H25.5V14.1667L17 7.79167L8.49996 14.1667V26.9167ZM5.66663 29.75V12.75L17 4.25L28.3333 12.75V29.75H18.4166V21.25H15.5833V29.75H5.66663Z"
+                  fill="#263238" fill-opacity="0.75" />
+          </svg>
+
+      </a>
+        <a href="./dashboard">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="34"
+            height="34"
+            fill="none"
+          >
+            <path
+              d="M18.4167 12.75V4.25H29.75V12.75H18.4167ZM4.25 18.4167V4.25H15.5833V18.4167H4.25ZM18.4167 29.75V15.5833H29.75V29.75H18.4167ZM4.25 29.75V21.25H15.5833V29.75H4.25ZM7.08333 15.5833H12.75V7.08333H7.08333V15.5833ZM21.25 26.9167H26.9167V18.4167H21.25V26.9167ZM21.25 9.91667H26.9167V7.08333H21.25V9.91667ZM7.08333 26.9167H12.75V24.0833H7.08333V26.9167Z"
+              fill="black"
+              fill-opacity="0.75"
+            />
+          </svg>
+        </a>
+        <!-- <a href="./map_1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="34"
+            height="34"
+            fill="none"
+          >
+            <path
+              d="M21.25 29.75L12.75 26.775L6.1625 29.325C5.69028 29.5139 5.25347 29.4605 4.85208 29.1649C4.45069 28.8693 4.25 28.4741 4.25 27.9792V8.14583C4.25 7.83889 4.33878 7.56736 4.51633 7.33125C4.69389 7.09514 4.93567 6.91806 5.24167 6.8L12.75 4.25L21.25 7.225L27.8375 4.675C28.3097 4.48611 28.7465 4.53947 29.1479 4.83508C29.5493 5.13069 29.75 5.52594 29.75 6.02083V25.8542C29.75 26.1611 29.6612 26.4326 29.4837 26.6688C29.3061 26.9049 29.0643 27.0819 28.7583 27.2L21.25 29.75ZM19.8333 26.2792V9.70417L14.1667 7.72083V24.2958L19.8333 26.2792ZM22.6667 26.2792L26.9167 24.8625V8.075L22.6667 9.70417V26.2792ZM7.08333 25.925L11.3333 24.2958V7.72083L7.08333 9.1375V25.925Z"
+              fill="black"
+              fill-opacity="0.75"
+            />
+          </svg>
+        </a> -->
+        <a href="map_2" class="menu-item item-active">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="7"
+            height="40"
+            fill="none"
+          >
+            <path d="M0 0L7 3V37L0 40V0Z" fill="#61439A" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+            <path d="M17.4269 26.25C17.9373 26.25 18.369 26.0735 18.7219 25.7206C19.0748 25.3677 19.2508 24.9365 19.2498 24.4271C19.2498 23.9167 19.0739 23.485 18.7219 23.1321C18.37 22.7792 17.9383 22.6032 17.4269 22.6042C16.9165 22.6042 16.4853 22.7806 16.1334 23.1335C15.7814 23.4865 15.605 23.9176 15.604 24.4271C15.604 24.9375 15.7805 25.3692 16.1334 25.7221C16.4863 26.075 16.9175 26.251 17.4269 26.25ZM16.1144 20.6354H18.8123C18.8123 19.8333 18.9037 19.2014 19.0865 18.7396C19.2693 18.2778 19.7855 17.6458 20.6353 16.8437C21.2672 16.2118 21.7655 15.61 22.13 15.0383C22.4946 14.4667 22.6769 13.7803 22.6769 12.9792C22.6769 11.6181 22.1787 10.5729 21.1821 9.84375C20.1856 9.11458 19.0068 8.75 17.6457 8.75C16.2603 8.75 15.1359 9.11458 14.2725 9.84375C13.4092 10.5729 12.8079 11.4479 12.4686 12.4687L14.8748 13.4167C14.9964 12.9792 15.27 12.5052 15.6959 11.9948C16.1217 11.4844 16.7716 11.2292 17.6457 11.2292C18.4234 11.2292 19.0068 11.4421 19.3957 11.8679C19.7846 12.2937 19.979 12.7614 19.979 13.2708C19.979 13.7569 19.8332 14.2129 19.5415 14.6387C19.2498 15.0646 18.8853 15.4593 18.4478 15.8229C17.3783 16.7708 16.7221 17.4878 16.479 17.974C16.2359 18.4601 16.1144 19.3472 16.1144 20.6354ZM17.4998 32.0833C15.4825 32.0833 13.5866 31.7003 11.8123 30.9342C10.038 30.1681 8.49463 29.1292 7.18213 27.8177C5.86963 26.5052 4.83081 24.9618 4.06567 23.1875C3.30053 21.4132 2.91748 19.5174 2.9165 17.5C2.9165 15.4826 3.29956 13.5868 4.06567 11.8125C4.83178 10.0382 5.8706 8.49479 7.18213 7.18229C8.49463 5.86979 10.038 4.83097 11.8123 4.06583C13.5866 3.30069 15.4825 2.91764 17.4998 2.91666C19.5172 2.91666 21.413 3.29972 23.1873 4.06583C24.9616 4.83194 26.505 5.87076 27.8175 7.18229C29.13 8.49479 30.1694 10.0382 30.9355 11.8125C31.7016 13.5868 32.0841 15.4826 32.0832 17.5C32.0832 19.5174 31.7001 21.4132 30.934 23.1875C30.1679 24.9618 29.1291 26.5052 27.8175 27.8177C26.505 29.1302 24.9616 30.1695 23.1873 30.9356C21.413 31.7017 19.5172 32.0843 17.4998 32.0833ZM17.4998 29.1667C20.7568 29.1667 23.5155 28.0365 25.7759 25.776C28.0363 23.5156 29.1665 20.7569 29.1665 17.5C29.1665 14.2431 28.0363 11.4844 25.7759 9.22396C23.5155 6.96354 20.7568 5.83333 17.4998 5.83333C14.2429 5.83333 11.4842 6.96354 9.2238 9.22396C6.96338 11.4844 5.83317 14.2431 5.83317 17.5C5.83317 20.7569 6.96338 23.5156 9.2238 25.776C11.4842 28.0365 14.2429 29.1667 17.4998 29.1667Z" fill="#61439A"/>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="12"
+            height="22"
+            fill="none"
+          >
+            <path
+              d="M0.918632 11.0659L11.5252 21.6725L11.5252 0.459315L0.918632 11.0659Z"
+              fill="#61439A"
+            />
+          </svg>
+        </a>
+      
+        <a href="/help">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="34"
+            height="34"
+            fill="none"
+          >
+            <path
+              d="M7.08333 28.3333V25.5H9.35L12.1479 16.1854C12.3368 15.5715 12.6853 15.0814 13.1934 14.7149C13.7015 14.3485 14.2621 14.1657 14.875 14.1667H19.125C19.7389 14.1667 20.2999 14.3499 20.808 14.7163C21.3161 15.0828 21.6641 15.5725 21.8521 16.1854L24.65 25.5H26.9167V28.3333H7.08333ZM12.325 25.5H21.675L19.125 17H14.875L12.325 25.5ZM15.5833 11.3333V4.25H18.4167V11.3333H15.5833ZM24.0125 14.8396L21.9937 12.8208L27.0229 7.82708L29.0062 9.81042L24.0125 14.8396ZM25.5 21.25V18.4167H32.5833V21.25H25.5ZM9.9875 14.8396L4.99375 9.81042L6.97708 7.82708L12.0062 12.8208L9.9875 14.8396ZM1.41666 21.25V18.4167H8.5V21.25H1.41666Z"
+              fill="#263238"
+            />
+          </svg>
+        </a>
+        <a href="/" style="text-decoration: none; color: black; font-size: 1.2rem; border: 2px solid black ; padding: .5rem 1rem; border-radius: 10px;"> logout </a>
+      </div>
+      <div>
+        <img class="munu-icon" src="../static/images/munu-icon.png" />
+      </div>
+    </div>
+
+   <main class="main-section">
+
+    <div class="container">
+      <div class="container-title">Directions</div>
+      <div id="map" class="map-container"  >
+        
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15113.412136333112!2d73.63930769999999!3d18.737761499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2ae1ac61fa98b%3A0x5fe5e156686d6ca!2sVadgaon%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1698303402037!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+      </div>
+    </div>
+
+    <div class="form-container">
+      <div class="form-card">
+
+        <form  method="POST" action="/map_2/police" class="form">
+          
+          <div>
+            <h1 style="color: red ; font-size: 2rem  ; " id="connect-response" >
+              {% if message %}
+              {{ message }}
+              {% endif %}
+              </h1>
+            <h2 class="form-text">Nearest Police Station :</h2>
+
+          </div>
+          <div class="form-field">
+           <h1> Police Station Name: <span id="police-station"></span> </h1>
+          </div>
+
+      
+  
+          <div class="form-field">
+            <p>Address: <span id="police-station-destination"></span> </p>
+           
+          </div>
+         
+          <!-- <button type="submit" style="cursor: pointer; width: 100%; padding: 1rem ; border-radius: 6px;
+          background: #61439A; border: none; color : white; margin-top: 1rem;" > Contact Police </button> -->
+        
+        </form>
+      </div>
+    </div>
+
+   </main>
+
+   <script>
+  document.addEventListener('DOMContentLoaded', function () {
+        getLocation().then(function (position) {
+            // Make an AJAX POST request to /map_2 with latitude and longitude
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', '/map_2', true);
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            
+            var data = JSON.stringify({ latitude: position.coords.latitude, longitude: position.coords.longitude });
+
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    if (xhr.status === 200) {
+                        var response = JSON.parse(xhr.responseText);
+                        console.log('Server response:', response);
+                        // Update your HTML with the received data (police station name)
+                        document.getElementById('map').innerHTML  = response.map;
+                      
+                        document.getElementById('police-station').textContent = response.police_station_name;
+                        document.getElementById('police-station-destination').textContent = response.destination;
+                        // document.getElementById('connect-response').textContent = response.message;
+                    } else {
+                        console.error('Error:', xhr.status, xhr.statusText);
+                    }
+                }
+            };
+
+            xhr.send(data);
+        }).catch(function (error) {
+            console.error('Error getting location:', error);
+        });
+
+        // Function to get current location
+        function getLocation() {
+            return new Promise(function (resolve, reject) {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(
+                        function (position) {
+                            resolve(position);
+                        },
+                        function (error) {
+                            reject(error);
+                        }
+                    );
+                } else {
+                    reject('Geolocation is not supported by this browser.');
+                }
+            });
+        }
+    });
+    </script>
+  </body>
+</html>
+
+
+

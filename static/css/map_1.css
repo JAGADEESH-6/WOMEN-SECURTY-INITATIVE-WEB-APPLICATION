@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,500;1,600;1,900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    
+    display: flex;
+    
+    
+}
+
+
+.sidebar {
+    background-color: aqua;
+    flex: 10%;
+    background: #FFF;
+    box-shadow: 0px 4px 64px 0px rgba(0, 0, 0, 0.10);
+}
+
+.sidebar img {
+    width: 100%;
+    height: auto;
+
+}
+
+.munu-icon{
+    display: none;
+}
+
+.sildebar-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.menu-item {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+
+.main-section {
+    flex: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.dashboard-header{
+    width: 100%;
+    height: 300px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 0px 100px;
+background: linear-gradient(180deg, #61439A 0%, #E6BFFF 100%);
+}
+
+.dashboard-header{
+    display: flex ;
+    justify-content: space-around;
+    align-items: center  ;
+}
+
+.dashboard-header h2 {
+    color: white;
+    font-size: 2rem;
+}
+
+
+.addres-btn{
+    padding: 1rem;
+     border-radius: 10px; font-weight: 600; color:black;
+     border : none;
+}
+
+
+.addres-btn p {
+    opacity: 80%;
+}
+
+.form-container {
+    display: grid;
+    place-content: center;
+    gap: 2rem;
+    margin: 2rem 0 ;
+}
+
+.map-container{
+ 
+   
+    width: 80%;
+    margin: 1rem auto;
+    /* display: flex;
+    flex-direction:  column;
+    justify-content: center;
+    align-items: center; */
+   
+    /* margin: 0 auto; */
+    /* display: flex;
+    justify-content: center; */
+    
+
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    .dashboard-header{
+        height: 220px;
+        border-radius: 0px 0px 50px 50px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 480px) {
+
+    body{
+        display: block;
+    }
+    .munu-icon{
+        display: block;
+        margin: 1rem;
+    }
+    .sidebar {
+        display: flex ;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+     .sidebar img {
+        width: 40px;
+        height: 32px;
+     }
+    .sildebar-menu {
+        display: none;
+    }
+    .dashboard-header{
+       height: auto;
+        border-radius: 0 0 30px 30px ;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem 0 ;
+    }
+   
+    .dashboard-header h2 {
+        font-size: 1rem;
+    }
+    
+    .addres-btnn{
+        padding: 0.2rem .5rem;
+         border-radius: 10px; font-weight: 500; color:black;
+          border : 1px solid black;
+    }
+    .map-container{
+       width: 100%;
+       height: 100%;
+    }
+    .form-field{
+        width: 100%;
+        padding: 0 2px;
+
+     }
+}

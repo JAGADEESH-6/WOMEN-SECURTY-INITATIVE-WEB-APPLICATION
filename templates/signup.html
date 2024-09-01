@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/signup.css') }}">
+</head>
+<body>
+  
+        <div class="img-login">
+
+        </div>
+        <div class="container">
+            <form class="form" method="POST" action="/signup" >
+                <div >
+                 <h2  class="form-text" >Welcome !</h2>
+                 <div>
+                   <h1 class="form-title">Sign up to </h1>
+                   <p class="form-para"> Lorem Ipsum is simply  </p>
+                 </div>
+               </div>
+               <div class="form-field">
+                <label for="email" class="form-label">Email</label>
+                <input required type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Enter your email ">
+               
+              </div>
+                <div class="form-field">
+                  <label for="username" class="form-label">Username</label>
+                  <input required type="text" class="form-control" name="username" id="username" placeholder="Enter your user name ">
+                 
+                </div>
+                <div class="form-field">
+                  <label for="password1" class="form-label">Password</label>
+                  <input required type="password" class="form-control" name="password1" id="password1" placeholder="Enter your Password" >
+                </div>
+                <div class="form-field">
+                    <label for="confirmpassword1" class="form-label">Confrim Password</label>
+                    <input required type="password" class="form-control" name="confirmpassword" id="confirmpassword" placeholder="Confrim your Password" >
+                  </div>
+                
+                <button type="submit" class="login-btn">Sign up</button>
+                <p style="width: 100%; text-align: center">
+                   Have an Account ? <a href="/">Login</a>
+                </p>
+              </form>
+        </div>
+ 
+</body>
+</html>
